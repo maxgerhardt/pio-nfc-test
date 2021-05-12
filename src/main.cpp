@@ -5,6 +5,8 @@ IPSDisplay display;
 Cardreader reader(display);
 
 void setup() {
+  Serial.begin(115200);
+  Serial.println("Firmware entry.");
   reader.begin();
 }
 
